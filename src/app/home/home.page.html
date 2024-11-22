@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" class="ion-text-center">
+
+
+   <ion-grid *ngFor=" let g of grupos">
+     <ion-row>
+       <ion-col>
+         <ion-button  size="large" [routerLink]="'/grupo'">
+           <ion-grid>
+             <ion-row >
+               <ion-col>
+                 <ion-img src="https://picsum.photos/80/80?random=2" />
+               </ion-col>
+               <ion-col >{{ g.nombre }}</ion-col>
+               <ion-col>
+                 <ion-img src="assets/img/avanzar.pngn" />
+               </ion-col>
+             </ion-row>
+           </ion-grid>
+         </ion-button>
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+
+
+
+
+
+  <ion-grid>
+    <ion-button  size="large" [routerLink]="'/crear-grupo'">
+      <ion-grid>
+        <ion-row >
+          <ion-col>Crear Nuevo WeShare</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-button>
+  </ion-grid>
+
+
+
+</ion-content>
+
+
+
+

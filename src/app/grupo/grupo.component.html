@@ -1,0 +1,51 @@
+<ion-content class="ion-text-center ion-justify-content-center" >
+
+
+
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-row class="ion-justify-content-center">
+
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Nombre Grupo</ion-card-title>
+
+            </ion-card-header>
+          </ion-card>
+        </ion-row>
+
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="2" >
+            <ion-button [disabled]="true">Gasto</ion-button>
+          </ion-col>
+          <ion-col size="2" >
+            <ion-button [routerLink]="'/participantes'">Saldo</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-justify-content-center" *ngFor="let p of pagos let i = index">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Gasto {{i+1}}</ion-card-title>
+                {{ p.importe }}     </ion-card-header>
+
+            <ion-card-content>
+              {{p.fecha}}
+            </ion-card-content>
+          </ion-card>
+        </ion-row>
+
+
+          <ion-button [routerLink]="'/anyadir-gasto'"   size="large" >
+                <ion-col>Añadir gasto</ion-col>
+          </ion-button>
+
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

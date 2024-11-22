@@ -1,0 +1,7 @@
+{
+  "name": "WeShare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,55 @@
+
+<ion-content class="ion-text-center" >
+
+  <ion-col >
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title>Nombre Gasto</ion-card-title>
+
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-row>
+          <ion-item>
+            <ion-input label="Nombre:" placeholder="Grupo"
+
+            ></ion-input>
+          </ion-item>
+        </ion-row>
+
+        <ion-row>
+          <ion-item>
+            <ion-input label="Importe:" placeholder="añadir importe"
+                       [(ngModel)]="pagoCreado.importe"
+            ></ion-input>
+          </ion-item>
+        </ion-row>
+
+        <ion-row>
+          <ion-item>
+            <ion-input label="Descripcion:" placeholder="escribir descripción"
+                       [(ngModel)]="pagoCreado.descripcion"
+            ></ion-input>
+          </ion-item>
+        </ion-row>
+
+        <ion-row>
+          <ion-item>
+            <ion-input label="Fecha:" placeholder="0000-00-00"
+                       [(ngModel)]="pagoCreado.fecha"
+            ></ion-input>
+          </ion-item>
+        </ion-row>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+
+
+  <ion-button [routerLink]="'/grupo'" (click)="crearPago()">
+    Añadir Gasto
+  </ion-button>
+
+
+</ion-content>

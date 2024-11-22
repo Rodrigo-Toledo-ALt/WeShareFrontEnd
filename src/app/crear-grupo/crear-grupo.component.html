@@ -1,0 +1,42 @@
+
+<ion-content class="ion-text-center" >
+
+  <ion-col >
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title>Nombre Weshare</ion-card-title>
+
+      </ion-card-header>
+
+
+      <ion-card-content>
+        <ion-input  placeholder="Escribir nombre Grupo"
+                    [(ngModel)]="grupoCreado.nombre"
+
+        ></ion-input>
+      </ion-card-content>
+
+        <ion-card-content>
+          <ion-input  placeholder="0000-00-00"
+                      [(ngModel)]="grupoCreado.fechaCreacion"
+
+          ></ion-input>
+
+        </ion-card-content>
+
+
+
+
+    </ion-card>
+  </ion-col>
+
+  <ion-button [routerLink]="'/home'" (click)="crearGrupo()">
+    Crear Grupo
+  </ion-button>
+
+
+
+
+
+</ion-content>
+

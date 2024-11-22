@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true" class="ion-text-center">
+
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>Participantes</ion-card-title>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="3">
+          <ion-button [routerLink]="'/grupo'">Gasto</ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button  [disabled]="true">Saldo</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card-header>
+    <ion-card-content >
+
+
+      <ion-list color="primary" class="p-3" >
+        <ion-item *ngFor="let p of participantes; let i = index">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label >{{p.nombre}}</ion-label>
+          <ion-label >{{ balances[i] }}</ion-label>
+        </ion-item>
+
+
+
+
+
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button [routerLink]="'/anyadir-amigo'"   size="large" >
+    <ion-col>Añadir Participante</ion-col>
+  </ion-button>
+
+</ion-content>

@@ -1,0 +1,35 @@
+
+<ion-content class="ion-text-center" >
+
+  <ion-col >
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title>Bienvenido</ion-card-title>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-row>
+
+          <ion-item>
+            <ion-input label="Nombre:" placeholder="Usuario"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+
+          <ion-item>
+            <ion-input label="Contraseña:" placeholder="nombre de tu mascota"></ion-input>
+          </ion-item>
+        </ion-row>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+
+
+  <ion-button [routerLink]="'/home'">
+    Iniciar sesión
+  </ion-button>
+
+
+</ion-content>

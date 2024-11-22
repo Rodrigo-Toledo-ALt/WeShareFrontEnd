@@ -1,0 +1,107 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import '@ionic/angular/css/palettes/dark.system.css';
+
+:root {
+  --ion-color-primary: #053829;
+  --ion-color-primary-rgb: 0, 102, 0;
+  --ion-color-primary-contrast: #D9D9D9;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #053829;
+  --ion-color-primary-tint: #053829;
+
+}
+
+
+ion-col{
+  align-content: center;
+}
+
+ion-img{
+  max-width: 50px;
+}
+
+ion-content{
+  --background: #074B38;
+}
+
+ion-button{
+  max-width: 15em;
+
+
+}
+
+.botonblanco {
+  --background: white;  /* Sets the background color to white */
+  --color: black;       /* Sets the text color to black (optional) */
+  --border-radius: 4px; /* Optional: customize the border radius */
+}
+
+ion-card{
+
+  --background: #053829;
+  --border-radius: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+ }
+
+ion-list{
+  --background: #053829;
+  border: #053829;
+
+}
+
+ion-item{
+  --background: #053829;
+  border: #053829;
+  --ion-border-color: #053829;
+
+}
+
+ion-card-content{
+  --background: #053829;
+  border: #053829;
+  --ion-border-color: #053829;
+
+}
+
+ion-card-content{
+  --background: #053829;
+  border: #053829;
+  --ion-border-color: #053829;
+
+}
